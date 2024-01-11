@@ -1,0 +1,10 @@
+clc;
+clear all;
+close all;
+n=-10:10;
+u=angle(i*pi*n/2);
+v=power(0.5,n);
+w=u.*v;
+subplot(3,1,1),stem(n,u);
+subplot(3,1,2),stem(n,v);
+subplot(3,1,3),stem(n,w);

@@ -1,0 +1,12 @@
+clc;
+clear all;
+close all;
+f=100;
+fs=1000;
+t=0:1/fs:1/f;
+u=square(2*pi*f*t,25);
+v=square(2*pi*f*t,50);
+w=square(2*pi*f*t,75);
+subplot(3,1,1),plot(t,u);
+subplot(3,1,2),plot(t,v);
+subplot(3,1,3),plot(t,w);

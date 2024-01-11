@@ -1,0 +1,10 @@
+clc;
+clear all;
+close all;
+n=-10:10;
+u=[(n)>=0];
+v=sin(n*pi/3);
+w=u.*v;
+subplot(3,1,1),stem(n,u);
+subplot(3,1,2),stem(n,v);
+subplot(3,1,3),stem(n,w);

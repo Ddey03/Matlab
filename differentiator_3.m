@@ -1,0 +1,13 @@
+clc;
+clear all;
+close all;
+n=0:20;
+b=[1 -1];
+a=[1];
+u=[n>=0];
+v=[n>=100];
+w=u-v;
+p=sin(pi*n/25);
+x=p.*w;
+h=filter(b,a,x);
+stem(n,h);

@@ -1,0 +1,10 @@
+clc;
+clear all;
+close all;
+n=0:15;
+u=[(n)>=0];
+u5=[(n-5)>=0];
+x=u-u5;
+y=[1 2 3 4 5];
+h=conv(x,y);
+plot(h);

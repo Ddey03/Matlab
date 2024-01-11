@@ -1,0 +1,10 @@
+clc;
+clear all;
+close all;
+f=100;
+fs=1000;
+t=0:1/fs:1/f;
+x=sin(2*pi*f*t);
+y=awgn(x,10);
+y1=autocorr(y);
+plot(y1);

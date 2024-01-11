@@ -1,0 +1,10 @@
+clc;
+clear all;
+close all;
+k=0:15;
+u=power(-1/2,k);
+v=power(2,k);
+w=power(-2,k);
+subplot(3,1,1),stem(k,u);
+subplot(3,1,2),stem(k,v);
+subplot(3,1,3),stem(k,w);

@@ -1,0 +1,14 @@
+clc;
+clear all;
+close all;
+b=[1/3 1/3 1/3];
+a=[1 0 0];
+n=512;
+[h w]=freqz(b,a,n);
+subplot(3,1,1),plot(w,abs(h));
+n=0:100;
+u=n>=0;
+x=(((0.9).^n).*u)+rand(1,101);
+y=filter(b,a,x);
+subplot(3,1,2),plot(x);
+subplot(3,1,3),plot(y);

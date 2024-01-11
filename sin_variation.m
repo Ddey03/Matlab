@@ -1,0 +1,15 @@
+clc;
+clear all;
+close all;
+f=200;
+fs1=1000;
+fs2=10000;
+t1=0:1/fs1:1/f;
+t2=0:1/fs2:1/f;
+t3=0:1/fs2:2/f;
+s1=sin(2*pi*f*t1);
+s2=sin(2*pi*f*t2);
+s3=sin(2*pi*f*t3);
+subplot(3,1,1),stem(t1,s1),ylabel('Amplitude '), xlabel('t');
+subplot(3,1,2),stem(t2,s2),ylabel('Amplitude '), xlabel('t');
+subplot(3,1,3),stem(t3,s3),ylabel('Amplitude '), xlabel('t');
